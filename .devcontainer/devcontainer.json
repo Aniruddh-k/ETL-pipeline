@@ -1,0 +1,10 @@
+{
+  "name": "Airflow Dev",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/pyenv:1": {
+      "version": "3.11"
+    }
+  },
+  "postCreateCommand": "pip install apache-airflow==2.7.3 --constraint https://raw.githubusercontent.com/apache/airflow/constraints-2.7.3/constraints-3.11.txt"
+}
